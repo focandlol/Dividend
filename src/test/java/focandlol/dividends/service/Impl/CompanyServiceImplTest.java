@@ -172,7 +172,6 @@ class CompanyServiceImplTest {
         mockPrefixMap.put("a company", null);
         mockPrefixMap.put("ABC Mart", null);
 
-        // Mock 동작 정의
         given(trie.prefixMap("a")).willReturn(mockPrefixMap);
 
         List<String> list = companyServiceImpl.autocomplete("a");
