@@ -1,4 +1,5 @@
 HELP.md
+LOGS_PATH_IS_UNDEFINED
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
