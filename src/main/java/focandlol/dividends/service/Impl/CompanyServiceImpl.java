@@ -70,9 +70,9 @@ public class CompanyServiceImpl implements CompanyService {
         return companyRepository.findAll(pageable);
     }
 
-
     /**
-     * 자동 완성 db 사용 방법
+     * 방법 1. 자동 완성 db 사용
+     * 미사용중
      */
     @Override
     @Transactional(readOnly = true)
@@ -82,9 +82,9 @@ public class CompanyServiceImpl implements CompanyService {
                 .map(a -> a.getName()).collect(Collectors.toList());
     }
 
-
     /**
-     * 자동 완성 trie 사용 방법
+     * 방법 2. 자동 완성 trie 사용
+     * 사용중
      */
     @Override
     public List<String> autocomplete(String keyword){
@@ -93,7 +93,8 @@ public class CompanyServiceImpl implements CompanyService {
     }
 
     /**
-     * 자동 완성 trie 사용 방법
+     * 방법 2. 자동 완성 trie 사용
+     * 사용중
      */
     @Override
     public void addAutocompleteKeyword(String keyword){
