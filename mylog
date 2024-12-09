@@ -1,0 +1,744 @@
+[2024-12-09 11:20:09:482][main] INFO  f.dividends.DividendsApplication - Starting DividendsApplication using Java 11.0.21 on DESKTOP-MTGRSSD with PID 15088 (C:\Users\1\Desktop\ggit\Dividends\build\classes\java\main started by 1 in C:\Users\1\Desktop\ggit\Dividends)
+[2024-12-09 11:20:09:487][main] INFO  f.dividends.DividendsApplication - No active profile set, falling back to default profiles: default
+[2024-12-09 11:20:10:1018][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-09 11:20:10:1019][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-12-09 11:20:10:1079][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 3 JPA repository interfaces.
+[2024-12-09 11:20:10:1090][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-09 11:20:10:1091][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2024-12-09 11:20:10:1106][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface focandlol.dividends.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-09 11:20:10:1107][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface focandlol.dividends.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-09 11:20:10:1107][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface focandlol.dividends.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-09 11:20:10:1107][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+[2024-12-09 11:20:10:1392][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2abbd0d9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-09 11:20:10:1399][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-09 11:20:10:1590][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2024-12-09 11:20:10:1596][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-09 11:20:10:1596][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2024-12-09 11:20:10:1597][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2024-12-09 11:20:10:1666][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2024-12-09 11:20:10:1666][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1147 ms
+[2024-12-09 11:20:10:1694][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2024-12-09 11:20:10:1773][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2024-12-09 11:20:10:1776][main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+[2024-12-09 11:20:11:1809][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$a9e45a4c@794240e2-> started to passwordEncoder
+[2024-12-09 11:20:11:1817][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$a9e45a4c@794240e2-> end to passwordEncoder
+[2024-12-09 11:20:11:1943][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-12-09 11:20:11:1985][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2024-12-09 11:20:11:2079][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2024-12-09 11:20:11:2163][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2024-12-09 11:20:11:2566][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2024-12-09 11:20:11:2571][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-09 11:20:12:2946][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-12-09 11:20:12:2962][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$a9e45a4c@794240e2-> started to trie
+[2024-12-09 11:20:12:2964][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$a9e45a4c@794240e2-> end to trie
+[2024-12-09 11:20:12:2991][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$465dc20d@515d615-> started to redisConnectionFactory
+[2024-12-09 11:20:12:3000][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$465dc20d@515d615-> end to redisConnectionFactory
+[2024-12-09 11:20:12:3107][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$465dc20d@515d615-> started to redisCacheManager
+[2024-12-09 11:20:12:3115][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$465dc20d@515d615-> end to redisCacheManager
+[2024-12-09 11:20:12:3192][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+[2024-12-09 11:20:12:3217][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3180131e, org.springframework.security.web.context.SecurityContextPersistenceFilter@c8ed958, org.springframework.security.web.header.HeaderWriterFilter@3ef7fb04, org.springframework.security.web.authentication.logout.LogoutFilter@309d54ac, focandlol.dividends.security.JwtAuthenticationFilter@10820978, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@751b901a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e0139, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62376bdd, org.springframework.security.web.session.SessionManagementFilter@151f1734, org.springframework.security.web.access.ExceptionTranslationFilter@77604a86, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@350d9d23]
+[2024-12-09 11:20:12:3577][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-09 11:20:12:3588][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2024-12-09 11:20:12:3591][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.SchedulerConfig$$EnhancerBySpringCGLIB$$6c5a6ea6@5552d10-> started to configureTasks
+[2024-12-09 11:20:12:3593][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.SchedulerConfig$$EnhancerBySpringCGLIB$$6c5a6ea6@5552d10-> end to configureTasks
+[2024-12-09 11:20:12:3598][main] INFO  f.dividends.DividendsApplication - Started DividendsApplication in 3.472 seconds (JVM running for 4.182)
+[2024-12-09 11:25:53:343886][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-09 11:25:53:343887][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-12-09 11:25:53:343887][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[2024-12-09 11:25:53:343956][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@1a22c1ba-> started to signUp
+[2024-12-09 11:25:53:343961][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@570b85dd-> started to register
+[2024-12-09 11:25:53:343967][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@44711ce-> started to existsByUsername
+[2024-12-09 11:25:53:343994][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@44711ce-> end to existsByUsername
+[2024-12-09 11:25:53:344057][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@44711ce-> started to save
+[2024-12-09 11:25:53:344081][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@44711ce-> end to save
+[2024-12-09 11:25:53:344081][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@570b85dd-> end to register
+[2024-12-09 11:25:53:344093][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@1a22c1ba-> end to signUp
+[2024-12-09 11:25:57:347947][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@1a22c1ba-> started to signIn
+[2024-12-09 11:25:57:347948][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@570b85dd-> started to authenticate
+[2024-12-09 11:25:57:347948][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@44711ce-> started to findByUsername
+[2024-12-09 11:25:57:347961][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@44711ce-> end to findByUsername
+[2024-12-09 11:25:57:348020][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@570b85dd-> end to authenticate
+[2024-12-09 11:25:57:348085][http-nio-8080-exec-3] INFO  f.dividends.web.AuthController - user login -> kkm
+[2024-12-09 11:25:57:348086][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@1a22c1ba-> end to signIn
+[2024-12-09 11:26:22:372916][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@570b85dd-> started to loadUserByUsername
+[2024-12-09 11:26:22:372917][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@44711ce-> started to findByUsername
+[2024-12-09 11:26:22:372918][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@44711ce-> end to findByUsername
+[2024-12-09 11:26:22:372919][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@570b85dd-> end to loadUserByUsername
+[2024-12-09 11:26:22:372920][http-nio-8080-exec-5] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company
+[2024-12-09 11:26:22:372921][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@641ab175-> started to addCompany
+[2024-12-09 11:26:22:372922][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@34c07ecc-> started to save
+[2024-12-09 11:26:22:372924][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@5e6fa99b-> started to existsByTicker
+[2024-12-09 11:26:22:372926][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@5e6fa99b-> end to existsByTicker
+[2024-12-09 11:26:22:372926][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@eb6ccbc-> started to scrapCompanyByTicker
+[2024-12-09 11:26:24:375159][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@eb6ccbc-> end to scrapCompanyByTicker
+[2024-12-09 11:26:24:375160][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@eb6ccbc-> started to scrap
+[2024-12-09 11:26:25:376633][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@eb6ccbc-> end to scrap
+[2024-12-09 11:26:25:376635][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@5e6fa99b-> started to save
+[2024-12-09 11:26:25:376639][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@5e6fa99b-> end to save
+[2024-12-09 11:26:25:376697][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@34c07ecc-> end to save
+[2024-12-09 11:26:25:376700][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@34c07ecc-> started to addAutocompleteKeyword
+[2024-12-09 11:26:25:376701][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@34c07ecc-> end to addAutocompleteKeyword
+[2024-12-09 11:26:25:376702][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@641ab175-> end to addCompany
+[2024-12-09 11:57:32:2242817][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-09 11:57:32:2242819][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2024-12-09 11:57:32:2242822][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2024-12-09 11:57:38:416][main] INFO  f.dividends.DividendsApplication - Starting DividendsApplication using Java 11.0.21 on DESKTOP-MTGRSSD with PID 12660 (C:\Users\1\Desktop\ggit\Dividends\build\classes\java\main started by 1 in C:\Users\1\Desktop\ggit\Dividends)
+[2024-12-09 11:57:38:419][main] INFO  f.dividends.DividendsApplication - No active profile set, falling back to default profiles: default
+[2024-12-09 11:57:39:892][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-09 11:57:39:892][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-12-09 11:57:39:945][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+[2024-12-09 11:57:39:953][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-09 11:57:39:954][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2024-12-09 11:57:39:965][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface focandlol.dividends.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-09 11:57:39:966][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface focandlol.dividends.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-09 11:57:39:966][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface focandlol.dividends.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-09 11:57:39:966][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+[2024-12-09 11:57:39:1189][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@659f226a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-09 11:57:39:1193][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-09 11:57:39:1355][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2024-12-09 11:57:39:1360][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-09 11:57:39:1360][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2024-12-09 11:57:39:1360][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2024-12-09 11:57:39:1421][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2024-12-09 11:57:39:1421][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 975 ms
+[2024-12-09 11:57:39:1445][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2024-12-09 11:57:39:1507][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2024-12-09 11:57:39:1511][main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+[2024-12-09 11:57:39:1538][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$7d3acd6b@6650a6c-> started to passwordEncoder
+[2024-12-09 11:57:39:1544][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$7d3acd6b@6650a6c-> end to passwordEncoder
+[2024-12-09 11:57:39:1644][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-12-09 11:57:39:1673][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2024-12-09 11:57:40:1748][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2024-12-09 11:57:40:1815][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2024-12-09 11:57:40:2166][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2024-12-09 11:57:40:2172][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-09 11:57:40:2518][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-12-09 11:57:40:2537][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$7d3acd6b@6650a6c-> started to trie
+[2024-12-09 11:57:40:2540][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$7d3acd6b@6650a6c-> end to trie
+[2024-12-09 11:57:40:2565][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$19b4352c@b889cb6-> started to redisConnectionFactory
+[2024-12-09 11:57:40:2571][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$19b4352c@b889cb6-> end to redisConnectionFactory
+[2024-12-09 11:57:40:2646][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$19b4352c@b889cb6-> started to redisCacheManager
+[2024-12-09 11:57:40:2654][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$19b4352c@b889cb6-> end to redisCacheManager
+[2024-12-09 11:57:41:2718][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+[2024-12-09 11:57:41:2740][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d77d269, org.springframework.security.web.context.SecurityContextPersistenceFilter@5248c05a, org.springframework.security.web.header.HeaderWriterFilter@3a6409ec, org.springframework.security.web.authentication.logout.LogoutFilter@70680f88, focandlol.dividends.security.JwtAuthenticationFilter@72c1bf75, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@601e7c97, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2926f7bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@350d9d23, org.springframework.security.web.session.SessionManagementFilter@32d8e58d, org.springframework.security.web.access.ExceptionTranslationFilter@5f596a1a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d836c4a]
+[2024-12-09 11:57:41:3075][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-09 11:57:41:3086][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2024-12-09 11:57:41:3090][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.SchedulerConfig$$EnhancerBySpringCGLIB$$3fb0e1c5@25d9298e-> started to configureTasks
+[2024-12-09 11:57:41:3091][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.SchedulerConfig$$EnhancerBySpringCGLIB$$3fb0e1c5@25d9298e-> end to configureTasks
+[2024-12-09 11:57:41:3096][main] INFO  f.dividends.DividendsApplication - Started DividendsApplication in 2.983 seconds (JVM running for 3.668)
+[2024-12-09 11:57:51:13086][http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-09 11:57:51:13087][http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-12-09 11:57:51:13087][http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[2024-12-09 11:57:51:13150][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@430db481-> started to signUp
+[2024-12-09 11:57:51:13155][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@6219006a-> started to register
+[2024-12-09 11:57:51:13159][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6ac57db6-> started to existsByUsername
+[2024-12-09 11:57:51:13184][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6ac57db6-> end to existsByUsername
+[2024-12-09 11:57:51:13248][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6ac57db6-> started to save
+[2024-12-09 11:57:51:13270][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6ac57db6-> end to save
+[2024-12-09 11:57:51:13271][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@6219006a-> end to register
+[2024-12-09 11:57:51:13282][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@430db481-> end to signUp
+[2024-12-09 11:57:53:15690][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@430db481-> started to signIn
+[2024-12-09 11:57:53:15692][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@6219006a-> started to authenticate
+[2024-12-09 11:57:53:15692][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6ac57db6-> started to findByUsername
+[2024-12-09 11:57:53:15704][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6ac57db6-> end to findByUsername
+[2024-12-09 11:57:54:15764][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@6219006a-> end to authenticate
+[2024-12-09 11:57:54:15813][http-nio-8080-exec-3] INFO  f.dividends.web.AuthController - user login -> kkm
+[2024-12-09 11:57:54:15813][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@430db481-> end to signIn
+[2024-12-09 11:57:56:18649][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@6219006a-> started to loadUserByUsername
+[2024-12-09 11:57:56:18649][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6ac57db6-> started to findByUsername
+[2024-12-09 11:57:56:18650][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6ac57db6-> end to findByUsername
+[2024-12-09 11:57:56:18650][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@6219006a-> end to loadUserByUsername
+[2024-12-09 11:57:56:18652][http-nio-8080-exec-4] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company
+[2024-12-09 11:57:56:18656][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@3e7ddb7e-> started to addCompany
+[2024-12-09 11:57:56:18658][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@796613b7-> started to save
+[2024-12-09 11:57:56:18659][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@7c5a489e-> started to existsByTicker
+[2024-12-09 11:57:56:18661][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@7c5a489e-> end to existsByTicker
+[2024-12-09 11:57:56:18661][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@5c43cb12-> started to scrapCompanyByTicker
+[2024-12-09 11:57:59:21079][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@5c43cb12-> end to scrapCompanyByTicker
+[2024-12-09 11:57:59:21079][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@5c43cb12-> started to scrap
+[2024-12-09 11:58:00:22403][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@5c43cb12-> end to scrap
+[2024-12-09 11:58:00:22404][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@7c5a489e-> started to save
+[2024-12-09 11:58:00:22407][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@7c5a489e-> end to save
+[2024-12-09 11:58:00:22478][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@796613b7-> end to save
+[2024-12-09 11:58:00:22479][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@796613b7-> started to addAutocompleteKeyword
+[2024-12-09 11:58:00:22479][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@796613b7-> end to addAutocompleteKeyword
+[2024-12-09 11:58:00:22479][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@3e7ddb7e-> end to addCompany
+[2024-12-09 12:20:37:1379177][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-09 12:20:37:1379179][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2024-12-09 12:20:37:1379181][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2024-12-09 12:20:40:383][main] INFO  f.dividends.DividendsApplication - Starting DividendsApplication using Java 11.0.21 on DESKTOP-MTGRSSD with PID 20212 (C:\Users\1\Desktop\ggit\Dividends\build\classes\java\main started by 1 in C:\Users\1\Desktop\ggit\Dividends)
+[2024-12-09 12:20:40:384][main] INFO  f.dividends.DividendsApplication - No active profile set, falling back to default profiles: default
+[2024-12-09 12:20:41:818][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-09 12:20:41:818][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-12-09 12:20:41:874][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 3 JPA repository interfaces.
+[2024-12-09 12:20:41:881][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-09 12:20:41:882][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2024-12-09 12:20:41:894][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface focandlol.dividends.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-09 12:20:41:895][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface focandlol.dividends.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-09 12:20:41:895][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface focandlol.dividends.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-09 12:20:41:895][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+[2024-12-09 12:20:41:1119][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@71cea1b8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-09 12:20:41:1123][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-09 12:20:41:1289][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2024-12-09 12:20:41:1294][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-09 12:20:41:1295][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2024-12-09 12:20:41:1295][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2024-12-09 12:20:41:1355][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2024-12-09 12:20:41:1356][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 947 ms
+[2024-12-09 12:20:41:1380][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2024-12-09 12:20:41:1444][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2024-12-09 12:20:41:1447][main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+[2024-12-09 12:20:41:1474][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$7d3acd6b@6650a6c-> started to passwordEncoder
+[2024-12-09 12:20:41:1481][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$7d3acd6b@6650a6c-> end to passwordEncoder
+[2024-12-09 12:20:42:1588][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-12-09 12:20:42:1620][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2024-12-09 12:20:42:1700][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2024-12-09 12:20:42:1768][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2024-12-09 12:20:42:2124][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2024-12-09 12:20:42:2129][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-09 12:20:42:2470][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-12-09 12:20:42:2486][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$7d3acd6b@6650a6c-> started to trie
+[2024-12-09 12:20:42:2488][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$7d3acd6b@6650a6c-> end to trie
+[2024-12-09 12:20:42:2513][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$19b4352c@3c4e23be-> started to redisConnectionFactory
+[2024-12-09 12:20:42:2519][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$19b4352c@3c4e23be-> end to redisConnectionFactory
+[2024-12-09 12:20:43:2597][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$19b4352c@3c4e23be-> started to redisCacheManager
+[2024-12-09 12:20:43:2605][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$19b4352c@3c4e23be-> end to redisCacheManager
+[2024-12-09 12:20:43:2668][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+[2024-12-09 12:20:43:2690][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ba02f70, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e0139, org.springframework.security.web.header.HeaderWriterFilter@3fb42ec7, org.springframework.security.web.authentication.logout.LogoutFilter@1acfc058, focandlol.dividends.security.JwtAuthenticationFilter@1f95158a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@438a65a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51d34f02, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e88ad38, org.springframework.security.web.session.SessionManagementFilter@5a20f793, org.springframework.security.web.access.ExceptionTranslationFilter@5ae67f05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35975b05]
+[2024-12-09 12:20:43:3038][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-09 12:20:43:3048][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2024-12-09 12:20:43:3052][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.SchedulerConfig$$EnhancerBySpringCGLIB$$3fb0e1c5@5e777b0-> started to configureTasks
+[2024-12-09 12:20:43:3054][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.SchedulerConfig$$EnhancerBySpringCGLIB$$3fb0e1c5@5e777b0-> end to configureTasks
+[2024-12-09 12:20:43:3058][main] INFO  f.dividends.DividendsApplication - Started DividendsApplication in 2.964 seconds (JVM running for 3.556)
+[2024-12-09 12:20:53:13245][http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-09 12:20:53:13246][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-12-09 12:20:53:13246][http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[2024-12-09 12:20:53:13308][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@7772ec28-> started to signUp
+[2024-12-09 12:20:53:13313][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to register
+[2024-12-09 12:20:53:13317][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to existsByUsername
+[2024-12-09 12:20:53:13342][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to existsByUsername
+[2024-12-09 12:20:53:13406][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to save
+[2024-12-09 12:20:53:13427][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to save
+[2024-12-09 12:20:53:13427][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to register
+[2024-12-09 12:20:53:13437][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@7772ec28-> end to signUp
+[2024-12-09 12:20:55:14801][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@7772ec28-> started to signIn
+[2024-12-09 12:20:55:14802][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to authenticate
+[2024-12-09 12:20:55:14803][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:20:55:14815][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:20:55:14874][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to authenticate
+[2024-12-09 12:20:55:14907][http-nio-8080-exec-3] INFO  f.dividends.web.AuthController - user login -> kkm
+[2024-12-09 12:20:55:14907][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@7772ec28-> end to signIn
+[2024-12-09 12:20:59:18616][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:20:59:18616][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:20:59:18617][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:20:59:18618][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:20:59:18619][http-nio-8080-exec-4] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company
+[2024-12-09 12:20:59:18623][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> started to addCompany
+[2024-12-09 12:20:59:18625][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to save
+[2024-12-09 12:20:59:18626][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to existsByTicker
+[2024-12-09 12:20:59:18628][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to existsByTicker
+[2024-12-09 12:20:59:18628][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> started to scrapCompanyByTicker
+[2024-12-09 12:21:01:20770][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> end to scrapCompanyByTicker
+[2024-12-09 12:21:01:20770][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> started to scrap
+[2024-12-09 12:21:02:22146][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> end to scrap
+[2024-12-09 12:21:02:22147][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to save
+[2024-12-09 12:21:02:22151][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to save
+[2024-12-09 12:21:02:22151][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> started to saveAll
+[2024-12-09 12:21:02:22208][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> end to saveAll
+[2024-12-09 12:21:02:22208][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to save
+[2024-12-09 12:21:02:22209][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to addAutocompleteKeyword
+[2024-12-09 12:21:02:22209][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to addAutocompleteKeyword
+[2024-12-09 12:21:02:22209][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> end to addCompany
+[2024-12-09 12:22:33:113185][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> started to autocomplete
+[2024-12-09 12:22:33:113185][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to autocomplete
+[2024-12-09 12:22:33:113188][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to autocomplete
+[2024-12-09 12:22:33:113188][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> end to autocomplete
+[2024-12-09 12:22:35:115318][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> started to autocomplete
+[2024-12-09 12:22:35:115319][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to autocomplete
+[2024-12-09 12:22:35:115319][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to autocomplete
+[2024-12-09 12:22:35:115319][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> end to autocomplete
+[2024-12-09 12:22:38:117766][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> started to autocomplete
+[2024-12-09 12:22:38:117766][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to autocomplete
+[2024-12-09 12:22:38:117766][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to autocomplete
+[2024-12-09 12:22:38:117766][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> end to autocomplete
+[2024-12-09 12:25:18:278169][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:25:18:278169][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:25:18:278170][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:25:18:278170][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:25:18:278171][http-nio-8080-exec-1] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company
+[2024-12-09 12:25:18:278172][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> started to addCompany
+[2024-12-09 12:25:18:278172][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to save
+[2024-12-09 12:25:18:278172][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to existsByTicker
+[2024-12-09 12:25:18:278172][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to existsByTicker
+[2024-12-09 12:25:18:278173][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> started to scrapCompanyByTicker
+[2024-12-09 12:25:20:279995][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> end to scrapCompanyByTicker
+[2024-12-09 12:25:20:279996][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> started to scrap
+[2024-12-09 12:25:21:281105][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> end to scrap
+[2024-12-09 12:25:21:281106][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to save
+[2024-12-09 12:25:21:281107][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to save
+[2024-12-09 12:25:21:281107][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> started to saveAll
+[2024-12-09 12:25:21:281153][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> end to saveAll
+[2024-12-09 12:25:21:281154][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to save
+[2024-12-09 12:25:21:281154][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to addAutocompleteKeyword
+[2024-12-09 12:25:21:281154][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to addAutocompleteKeyword
+[2024-12-09 12:25:21:281154][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> end to addCompany
+[2024-12-09 12:25:47:307339][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:25:47:307339][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:25:47:307340][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:25:47:307340][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:25:47:307341][http-nio-8080-exec-4] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company
+[2024-12-09 12:25:47:307342][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> started to searchCompany
+[2024-12-09 12:25:47:307342][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to getAllCompany
+[2024-12-09 12:25:47:307343][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to findAll
+[2024-12-09 12:25:47:307350][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to findAll
+[2024-12-09 12:25:47:307350][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to getAllCompany
+[2024-12-09 12:25:47:307350][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> end to searchCompany
+[2024-12-09 12:27:13:393502][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:27:13:393502][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:27:13:393503][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:27:13:393503][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:27:13:393503][http-nio-8080-exec-7] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company/MMM
+[2024-12-09 12:27:13:393505][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> started to deleteCompany
+[2024-12-09 12:27:13:393505][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to deleteCompany
+[2024-12-09 12:27:13:393506][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to findByTicker
+[2024-12-09 12:27:13:393507][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to findByTicker
+[2024-12-09 12:27:13:393508][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> started to deleteAllByCompanyId
+[2024-12-09 12:27:13:393517][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> end to deleteAllByCompanyId
+[2024-12-09 12:27:13:393517][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to delete
+[2024-12-09 12:27:13:393522][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to delete
+[2024-12-09 12:27:13:393522][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to deleteCompany
+[2024-12-09 12:27:14:394105][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> end to deleteCompany
+[2024-12-09 12:28:15:455432][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:28:15:455432][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:28:15:455433][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:28:15:455433][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:28:15:455434][http-nio-8080-exec-10] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company
+[2024-12-09 12:28:15:455435][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> started to searchCompany
+[2024-12-09 12:28:15:455435][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to getAllCompany
+[2024-12-09 12:28:15:455435][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to findAll
+[2024-12-09 12:28:15:455435][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to findAll
+[2024-12-09 12:28:15:455435][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to getAllCompany
+[2024-12-09 12:28:15:455436][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> end to searchCompany
+[2024-12-09 12:28:24:464162][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:28:24:464162][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:28:24:464163][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:28:24:464163][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:28:24:464164][http-nio-8080-exec-2] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company
+[2024-12-09 12:28:24:464164][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> started to searchCompany
+[2024-12-09 12:28:24:464164][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to getAllCompany
+[2024-12-09 12:28:24:464165][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to findAll
+[2024-12-09 12:28:24:464165][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to findAll
+[2024-12-09 12:28:24:464165][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to getAllCompany
+[2024-12-09 12:28:24:464165][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> end to searchCompany
+[2024-12-09 12:33:18:757983][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:33:18:757983][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:33:18:757984][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:33:18:757984][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:33:18:757984][http-nio-8080-exec-3] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /finance/dividend/3M%20Company
+[2024-12-09 12:33:18:757985][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@5bbc033f-> started to searchFinance
+[2024-12-09 12:33:18:757991][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.FinanceServiceImpl@43120a77-> started to getDividendByCompanyName
+[2024-12-09 12:33:18:757993][http-nio-8080-exec-3] INFO  f.d.service.Impl.FinanceServiceImpl - search company -> 3M Company
+[2024-12-09 12:33:18:757993][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to findByName
+[2024-12-09 12:33:18:757995][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to findByName
+[2024-12-09 12:33:18:757996][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@12dc702b-> started to handleCustomException
+[2024-12-09 12:33:18:757997][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@12dc702b-> end to handleCustomException
+[2024-12-09 12:34:00:799844][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:34:00:799845][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:34:00:799846][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:34:00:799846][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:34:00:799846][http-nio-8080-exec-7] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company
+[2024-12-09 12:34:00:799847][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> started to addCompany
+[2024-12-09 12:34:00:799847][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to save
+[2024-12-09 12:34:00:799847][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to existsByTicker
+[2024-12-09 12:34:00:799848][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to existsByTicker
+[2024-12-09 12:34:00:799848][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> started to scrapCompanyByTicker
+[2024-12-09 12:34:02:801745][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> end to scrapCompanyByTicker
+[2024-12-09 12:34:02:801745][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> started to scrap
+[2024-12-09 12:34:03:803118][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> end to scrap
+[2024-12-09 12:34:03:803119][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to save
+[2024-12-09 12:34:03:803120][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to save
+[2024-12-09 12:34:03:803120][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> started to saveAll
+[2024-12-09 12:34:03:803143][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> end to saveAll
+[2024-12-09 12:34:03:803143][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to save
+[2024-12-09 12:34:03:803144][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to addAutocompleteKeyword
+[2024-12-09 12:34:03:803144][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to addAutocompleteKeyword
+[2024-12-09 12:34:03:803144][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> end to addCompany
+[2024-12-09 12:34:13:812992][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:34:13:812993][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:34:13:812993][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:34:13:812993][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:34:13:812994][http-nio-8080-exec-8] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /finance/dividend/3M%20Company
+[2024-12-09 12:34:13:812994][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@5bbc033f-> started to searchFinance
+[2024-12-09 12:34:13:812995][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.FinanceServiceImpl@43120a77-> started to getDividendByCompanyName
+[2024-12-09 12:34:13:812995][http-nio-8080-exec-8] INFO  f.d.service.Impl.FinanceServiceImpl - search company -> 3M Company
+[2024-12-09 12:34:13:812995][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to findByName
+[2024-12-09 12:34:13:812996][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to findByName
+[2024-12-09 12:34:13:812996][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> started to findAllByCompanyId
+[2024-12-09 12:34:13:813005][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> end to findAllByCompanyId
+[2024-12-09 12:34:13:813005][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.FinanceServiceImpl@43120a77-> end to getDividendByCompanyName
+[2024-12-09 12:34:13:813015][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@5bbc033f-> end to searchFinance
+[2024-12-09 12:34:17:816895][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:34:17:816895][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:34:17:816896][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:34:17:816896][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:34:17:816896][http-nio-8080-exec-9] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /finance/dividend/3M%20Company
+[2024-12-09 12:34:17:816897][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@5bbc033f-> started to searchFinance
+[2024-12-09 12:34:17:816905][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@5bbc033f-> end to searchFinance
+[2024-12-09 12:34:18:818251][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:34:18:818251][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:34:18:818252][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:34:18:818252][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:34:18:818252][http-nio-8080-exec-10] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /finance/dividend/3M%20Company
+[2024-12-09 12:34:18:818253][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@5bbc033f-> started to searchFinance
+[2024-12-09 12:34:18:818255][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@5bbc033f-> end to searchFinance
+[2024-12-09 12:34:19:819457][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:34:19:819457][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:34:19:819458][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:34:19:819458][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:34:19:819458][http-nio-8080-exec-2] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /finance/dividend/3M%20Company
+[2024-12-09 12:34:19:819459][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@5bbc033f-> started to searchFinance
+[2024-12-09 12:34:19:819461][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@5bbc033f-> end to searchFinance
+[2024-12-09 12:35:26:886409][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:35:26:886410][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:35:26:886410][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:35:26:886410][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:35:26:886411][http-nio-8080-exec-4] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company/MMM
+[2024-12-09 12:35:26:886411][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> started to deleteCompany
+[2024-12-09 12:35:26:886412][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to deleteCompany
+[2024-12-09 12:35:26:886412][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to findByTicker
+[2024-12-09 12:35:26:886412][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to findByTicker
+[2024-12-09 12:35:26:886413][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> started to deleteAllByCompanyId
+[2024-12-09 12:35:26:886414][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> end to deleteAllByCompanyId
+[2024-12-09 12:35:26:886414][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to delete
+[2024-12-09 12:35:26:886415][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to delete
+[2024-12-09 12:35:26:886415][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to deleteCompany
+[2024-12-09 12:35:26:886416][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> end to deleteCompany
+[2024-12-09 12:35:34:894163][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:35:34:894164][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:35:34:894165][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:35:34:894165][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:35:34:894165][http-nio-8080-exec-5] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company
+[2024-12-09 12:35:34:894166][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> started to addCompany
+[2024-12-09 12:35:34:894166][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to save
+[2024-12-09 12:35:34:894166][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to existsByTicker
+[2024-12-09 12:35:34:894166][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to existsByTicker
+[2024-12-09 12:35:34:894167][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> started to scrapCompanyByTicker
+[2024-12-09 12:35:36:896283][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> end to scrapCompanyByTicker
+[2024-12-09 12:35:36:896284][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> started to scrap
+[2024-12-09 12:35:38:897790][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@6e22d6bf-> end to scrap
+[2024-12-09 12:35:38:897791][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to save
+[2024-12-09 12:35:38:897792][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to save
+[2024-12-09 12:35:38:897792][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> started to saveAll
+[2024-12-09 12:35:38:897808][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> end to saveAll
+[2024-12-09 12:35:38:897808][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to save
+[2024-12-09 12:35:38:897808][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> started to addAutocompleteKeyword
+[2024-12-09 12:35:38:897808][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@27b7e663-> end to addAutocompleteKeyword
+[2024-12-09 12:35:38:897808][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@2fd05b15-> end to addCompany
+[2024-12-09 12:35:45:904826][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:35:45:904827][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:35:45:904828][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:35:45:904828][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:35:45:904828][http-nio-8080-exec-6] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /finance/dividend/3M%20Company
+[2024-12-09 12:35:45:904829][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@5bbc033f-> started to searchFinance
+[2024-12-09 12:35:45:904830][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.FinanceServiceImpl@43120a77-> started to getDividendByCompanyName
+[2024-12-09 12:35:45:904830][http-nio-8080-exec-6] INFO  f.d.service.Impl.FinanceServiceImpl - search company -> 3M Company
+[2024-12-09 12:35:45:904830][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> started to findByName
+[2024-12-09 12:35:45:904830][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6f88242c-> end to findByName
+[2024-12-09 12:35:45:904830][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> started to findAllByCompanyId
+[2024-12-09 12:35:45:904836][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@17849726-> end to findAllByCompanyId
+[2024-12-09 12:35:45:904836][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.FinanceServiceImpl@43120a77-> end to getDividendByCompanyName
+[2024-12-09 12:35:45:904837][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@5bbc033f-> end to searchFinance
+[2024-12-09 12:35:50:910066][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> started to loadUserByUsername
+[2024-12-09 12:35:50:910066][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> started to findByUsername
+[2024-12-09 12:35:50:910067][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@55059404-> end to findByUsername
+[2024-12-09 12:35:50:910067][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@72c1bf75-> end to loadUserByUsername
+[2024-12-09 12:35:50:910067][http-nio-8080-exec-7] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /finance/dividend/3M%20Company
+[2024-12-09 12:35:50:910068][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@5bbc033f-> started to searchFinance
+[2024-12-09 12:35:50:910070][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@5bbc033f-> end to searchFinance
+[2024-12-09 13:04:45:2645498][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-09 13:04:45:2645500][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2024-12-09 13:04:45:2645502][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2024-12-09 13:04:48:377][main] INFO  f.dividends.DividendsApplication - Starting DividendsApplication using Java 11.0.21 on DESKTOP-MTGRSSD with PID 26044 (C:\Users\1\Desktop\ggit\Dividends\build\classes\java\main started by 1 in C:\Users\1\Desktop\ggit\Dividends)
+[2024-12-09 13:04:48:379][main] INFO  f.dividends.DividendsApplication - No active profile set, falling back to default profiles: default
+[2024-12-09 13:04:48:802][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-09 13:04:48:802][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-12-09 13:04:48:855][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+[2024-12-09 13:04:48:863][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-09 13:04:48:863][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2024-12-09 13:04:48:875][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface focandlol.dividends.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-09 13:04:48:875][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface focandlol.dividends.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-09 13:04:48:876][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface focandlol.dividends.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-09 13:04:48:876][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+[2024-12-09 13:04:48:1094][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@de7e193' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-09 13:04:48:1097][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-09 13:04:48:1260][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2024-12-09 13:04:48:1265][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-09 13:04:48:1265][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2024-12-09 13:04:48:1265][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2024-12-09 13:04:48:1325][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2024-12-09 13:04:48:1325][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 922 ms
+[2024-12-09 13:04:49:1348][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2024-12-09 13:04:49:1408][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2024-12-09 13:04:49:1411][main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+[2024-12-09 13:04:49:1437][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$2e21bcdc@7b8ea1db-> started to passwordEncoder
+[2024-12-09 13:04:49:1444][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$2e21bcdc@7b8ea1db-> end to passwordEncoder
+[2024-12-09 13:04:49:1543][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-12-09 13:04:49:1572][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2024-12-09 13:04:49:1645][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2024-12-09 13:04:49:1717][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2024-12-09 13:04:49:2063][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2024-12-09 13:04:49:2068][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-09 13:04:50:2412][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-12-09 13:04:50:2427][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$2e21bcdc@7b8ea1db-> started to trie
+[2024-12-09 13:04:50:2429][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$2e21bcdc@7b8ea1db-> end to trie
+[2024-12-09 13:04:50:2454][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$ca9b249d@6a2057e-> started to redisConnectionFactory
+[2024-12-09 13:04:50:2461][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$ca9b249d@6a2057e-> end to redisConnectionFactory
+[2024-12-09 13:04:50:2538][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$ca9b249d@6a2057e-> started to redisCacheManager
+[2024-12-09 13:04:50:2546][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$ca9b249d@6a2057e-> end to redisCacheManager
+[2024-12-09 13:04:50:2608][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+[2024-12-09 13:04:50:2630][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b8a063d, org.springframework.security.web.context.SecurityContextPersistenceFilter@751b901a, org.springframework.security.web.header.HeaderWriterFilter@2d4f1ddd, org.springframework.security.web.authentication.logout.LogoutFilter@561c031, focandlol.dividends.security.JwtAuthenticationFilter@28ceb25e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ccce165, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@438a65a7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a36da5e, org.springframework.security.web.session.SessionManagementFilter@c8ed958, org.springframework.security.web.access.ExceptionTranslationFilter@3a6409ec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3180131e]
+[2024-12-09 13:04:50:2983][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-09 13:04:50:2993][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2024-12-09 13:04:50:2997][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.SchedulerConfig$$EnhancerBySpringCGLIB$$f097d136@5b7b0ada-> started to configureTasks
+[2024-12-09 13:04:50:2999][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.SchedulerConfig$$EnhancerBySpringCGLIB$$f097d136@5b7b0ada-> end to configureTasks
+[2024-12-09 13:04:50:3003][main] INFO  f.dividends.DividendsApplication - Started DividendsApplication in 2.913 seconds (JVM running for 3.499)
+[2024-12-09 13:08:12:204501][SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-09 13:08:12:204503][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2024-12-09 13:08:12:204506][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2024-12-09 13:08:15:373][main] INFO  f.dividends.DividendsApplication - Starting DividendsApplication using Java 11.0.21 on DESKTOP-MTGRSSD with PID 11480 (C:\Users\1\Desktop\ggit\Dividends\build\classes\java\main started by 1 in C:\Users\1\Desktop\ggit\Dividends)
+[2024-12-09 13:08:15:374][main] INFO  f.dividends.DividendsApplication - No active profile set, falling back to default profiles: default
+[2024-12-09 13:08:15:790][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-09 13:08:15:791][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-12-09 13:08:15:843][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
+[2024-12-09 13:08:15:850][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2024-12-09 13:08:15:851][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2024-12-09 13:08:15:862][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface focandlol.dividends.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-09 13:08:15:862][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface focandlol.dividends.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-09 13:08:15:863][main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface focandlol.dividends.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2024-12-09 13:08:15:863][main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+[2024-12-09 13:08:15:1080][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@93824eb' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-09 13:08:15:1085][main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2024-12-09 13:08:16:1247][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2024-12-09 13:08:16:1252][main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-09 13:08:16:1252][main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2024-12-09 13:08:16:1252][main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2024-12-09 13:08:16:1312][main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2024-12-09 13:08:16:1313][main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 913 ms
+[2024-12-09 13:08:16:1337][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2024-12-09 13:08:16:1396][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2024-12-09 13:08:16:1400][main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+[2024-12-09 13:08:16:1425][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$ce2c4a31@194012a2-> started to passwordEncoder
+[2024-12-09 13:08:16:1434][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$ce2c4a31@194012a2-> end to passwordEncoder
+[2024-12-09 13:08:16:1533][main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-12-09 13:08:16:1560][main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+[2024-12-09 13:08:16:1632][main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2024-12-09 13:08:16:1702][main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2024-12-09 13:08:16:2054][main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2024-12-09 13:08:16:2060][main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-12-09 13:08:17:2399][main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-12-09 13:08:17:2414][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$ce2c4a31@194012a2-> started to trie
+[2024-12-09 13:08:17:2416][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.AppConfig$$EnhancerBySpringCGLIB$$ce2c4a31@194012a2-> end to trie
+[2024-12-09 13:08:17:2441][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$6aa5b1f2@705d72f0-> started to redisConnectionFactory
+[2024-12-09 13:08:17:2447][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$6aa5b1f2@705d72f0-> end to redisConnectionFactory
+[2024-12-09 13:08:17:2521][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$6aa5b1f2@705d72f0-> started to redisCacheManager
+[2024-12-09 13:08:17:2529][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.CacheConfig$$EnhancerBySpringCGLIB$$6aa5b1f2@705d72f0-> end to redisCacheManager
+[2024-12-09 13:08:17:2590][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+[2024-12-09 13:08:17:2612][main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e88ad38, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e4b9592, org.springframework.security.web.header.HeaderWriterFilter@1f7b1d6a, org.springframework.security.web.authentication.logout.LogoutFilter@725490dd, focandlol.dividends.security.JwtAuthenticationFilter@64829470, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@543c887, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@441762b8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2148849f, org.springframework.security.web.session.SessionManagementFilter@211cf27b, org.springframework.security.web.access.ExceptionTranslationFilter@4bc39640, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@474deb4c]
+[2024-12-09 13:08:17:2963][main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-09 13:08:17:2973][main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2024-12-09 13:08:17:2976][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.SchedulerConfig$$EnhancerBySpringCGLIB$$90a25e8b@488b46da-> started to configureTasks
+[2024-12-09 13:08:17:2978][main] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.config.SchedulerConfig$$EnhancerBySpringCGLIB$$90a25e8b@488b46da-> end to configureTasks
+[2024-12-09 13:08:17:2983][main] INFO  f.dividends.DividendsApplication - Started DividendsApplication in 2.893 seconds (JVM running for 3.477)
+[2024-12-09 13:08:27:12649][http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-09 13:08:27:12650][http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2024-12-09 13:08:27:12651][http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2024-12-09 13:08:27:12711][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@1a22c1ba-> started to signUp
+[2024-12-09 13:08:27:12716][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to register
+[2024-12-09 13:08:27:12722][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to existsByUsername
+[2024-12-09 13:08:27:12746][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to existsByUsername
+[2024-12-09 13:08:27:12809][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to save
+[2024-12-09 13:08:27:12831][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to save
+[2024-12-09 13:08:27:12831][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> end to register
+[2024-12-09 13:08:27:12841][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@1a22c1ba-> end to signUp
+[2024-12-09 13:08:31:16384][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@1a22c1ba-> started to signUp
+[2024-12-09 13:08:31:16384][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to register
+[2024-12-09 13:08:31:16384][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to existsByUsername
+[2024-12-09 13:08:31:16386][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to existsByUsername
+[2024-12-09 13:08:31:16389][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> started to handleCustomException
+[2024-12-09 13:08:31:16389][http-nio-8080-exec-3] ERROR f.d.e.CustomExceptionHandler - 이미 사용 중인 아이디 입니다
+[2024-12-09 13:08:31:16389][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> end to handleCustomException
+[2024-12-09 13:09:03:49239][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@1a22c1ba-> started to signIn
+[2024-12-09 13:09:03:49240][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to authenticate
+[2024-12-09 13:09:03:49240][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to findByUsername
+[2024-12-09 13:09:04:49244][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to findByUsername
+[2024-12-09 13:09:04:49245][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> started to handleCustomException
+[2024-12-09 13:09:04:49245][http-nio-8080-exec-5] ERROR f.d.e.CustomExceptionHandler - 존재하지 않는 id 입니다.
+[2024-12-09 13:09:04:49245][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> end to handleCustomException
+[2024-12-09 13:09:09:54498][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@1a22c1ba-> started to signIn
+[2024-12-09 13:09:09:54499][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to authenticate
+[2024-12-09 13:09:09:54499][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to findByUsername
+[2024-12-09 13:09:09:54506][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to findByUsername
+[2024-12-09 13:09:09:54567][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> end to authenticate
+[2024-12-09 13:09:09:54600][http-nio-8080-exec-7] INFO  f.dividends.web.AuthController - user login -> kkm
+[2024-12-09 13:09:09:54600][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.AuthController@1a22c1ba-> end to signIn
+[2024-12-09 13:09:18:63448][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to loadUserByUsername
+[2024-12-09 13:09:18:63448][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to findByUsername
+[2024-12-09 13:09:18:63449][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to findByUsername
+[2024-12-09 13:09:18:63450][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> end to loadUserByUsername
+[2024-12-09 13:09:18:63451][http-nio-8080-exec-8] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company
+[2024-12-09 13:09:18:63456][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@564fc235-> started to addCompany
+[2024-12-09 13:09:18:63457][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> started to save
+[2024-12-09 13:09:18:63459][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> started to existsByTicker
+[2024-12-09 13:09:18:63461][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> end to existsByTicker
+[2024-12-09 13:09:18:63461][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@59d09ff3-> started to scrapCompanyByTicker
+[2024-12-09 13:09:20:65619][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@59d09ff3-> end to scrapCompanyByTicker
+[2024-12-09 13:09:20:65619][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@59d09ff3-> started to scrap
+[2024-12-09 13:09:21:67085][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@59d09ff3-> end to scrap
+[2024-12-09 13:09:21:67087][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> started to save
+[2024-12-09 13:09:21:67089][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> end to save
+[2024-12-09 13:09:21:67138][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> end to save
+[2024-12-09 13:09:21:67139][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> started to addAutocompleteKeyword
+[2024-12-09 13:09:21:67139][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> end to addAutocompleteKeyword
+[2024-12-09 13:09:21:67139][http-nio-8080-exec-8] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@564fc235-> end to addCompany
+[2024-12-09 13:09:35:80419][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to loadUserByUsername
+[2024-12-09 13:09:35:80420][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to findByUsername
+[2024-12-09 13:09:35:80421][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to findByUsername
+[2024-12-09 13:09:35:80421][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> end to loadUserByUsername
+[2024-12-09 13:09:35:80422][http-nio-8080-exec-9] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company
+[2024-12-09 13:09:35:80423][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@564fc235-> started to addCompany
+[2024-12-09 13:09:35:80423][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> started to save
+[2024-12-09 13:09:35:80423][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> started to existsByTicker
+[2024-12-09 13:09:35:80424][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> end to existsByTicker
+[2024-12-09 13:09:35:80424][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> started to handleCustomException
+[2024-12-09 13:09:35:80424][http-nio-8080-exec-9] ERROR f.d.e.CustomExceptionHandler - 이미 보유하고 있는 회사 정보 입니다
+[2024-12-09 13:09:35:80424][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> end to handleCustomException
+[2024-12-09 13:09:49:94921][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to loadUserByUsername
+[2024-12-09 13:09:49:94921][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to findByUsername
+[2024-12-09 13:09:49:94922][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to findByUsername
+[2024-12-09 13:09:49:94922][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> end to loadUserByUsername
+[2024-12-09 13:09:49:94922][http-nio-8080-exec-1] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company
+[2024-12-09 13:09:49:94923][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@564fc235-> started to addCompany
+[2024-12-09 13:09:49:94923][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> started to save
+[2024-12-09 13:09:49:94924][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> started to existsByTicker
+[2024-12-09 13:09:49:94924][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> end to existsByTicker
+[2024-12-09 13:09:49:94924][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@59d09ff3-> started to scrapCompanyByTicker
+[2024-12-09 13:09:50:96138][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.scraper.YahooFinanceScraper@59d09ff3-> end to scrapCompanyByTicker
+[2024-12-09 13:09:50:96139][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> started to handleCustomException
+[2024-12-09 13:09:50:96139][http-nio-8080-exec-1] ERROR f.d.e.CustomExceptionHandler - 존재하지 않는 ticker 입니다.
+[2024-12-09 13:09:50:96139][http-nio-8080-exec-1] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> end to handleCustomException
+[2024-12-09 13:10:07:113220][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to loadUserByUsername
+[2024-12-09 13:10:07:113220][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to findByUsername
+[2024-12-09 13:10:07:113221][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to findByUsername
+[2024-12-09 13:10:07:113221][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> end to loadUserByUsername
+[2024-12-09 13:10:07:113222][http-nio-8080-exec-3] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company
+[2024-12-09 13:10:07:113227][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@564fc235-> started to searchCompany
+[2024-12-09 13:10:07:113227][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> started to getAllCompany
+[2024-12-09 13:10:07:113229][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> started to findAll
+[2024-12-09 13:10:07:113234][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> end to findAll
+[2024-12-09 13:10:07:113235][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> end to getAllCompany
+[2024-12-09 13:10:07:113235][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@564fc235-> end to searchCompany
+[2024-12-09 13:10:23:128433][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to loadUserByUsername
+[2024-12-09 13:10:23:128433][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to findByUsername
+[2024-12-09 13:10:23:128434][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to findByUsername
+[2024-12-09 13:10:23:128434][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> end to loadUserByUsername
+[2024-12-09 13:10:23:128435][http-nio-8080-exec-4] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /finance/dividend/3M%20Company
+[2024-12-09 13:10:23:128440][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@734a2c17-> started to searchFinance
+[2024-12-09 13:10:23:128979][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.FinanceServiceImpl@68feca3a-> started to getDividendByCompanyName
+[2024-12-09 13:10:23:128980][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> started to findByName
+[2024-12-09 13:10:23:128982][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> end to findByName
+[2024-12-09 13:10:23:128982][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@49e93381-> started to findAllByCompanyId
+[2024-12-09 13:10:23:128992][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@49e93381-> end to findAllByCompanyId
+[2024-12-09 13:10:23:128992][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.FinanceServiceImpl@68feca3a-> end to getDividendByCompanyName
+[2024-12-09 13:10:23:129003][http-nio-8080-exec-4] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@734a2c17-> end to searchFinance
+[2024-12-09 13:10:28:133631][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to loadUserByUsername
+[2024-12-09 13:10:28:133631][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to findByUsername
+[2024-12-09 13:10:28:133632][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to findByUsername
+[2024-12-09 13:10:28:133632][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> end to loadUserByUsername
+[2024-12-09 13:10:28:133633][http-nio-8080-exec-5] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /finance/dividend/3M%20Company
+[2024-12-09 13:10:28:133633][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@734a2c17-> started to searchFinance
+[2024-12-09 13:10:28:133642][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@734a2c17-> end to searchFinance
+[2024-12-09 13:10:29:134739][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to loadUserByUsername
+[2024-12-09 13:10:29:134739][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to findByUsername
+[2024-12-09 13:10:29:134740][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to findByUsername
+[2024-12-09 13:10:29:134740][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> end to loadUserByUsername
+[2024-12-09 13:10:29:134741][http-nio-8080-exec-6] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /finance/dividend/3M%20Company
+[2024-12-09 13:10:29:134741][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@734a2c17-> started to searchFinance
+[2024-12-09 13:10:29:134743][http-nio-8080-exec-6] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@734a2c17-> end to searchFinance
+[2024-12-09 13:10:39:144462][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to loadUserByUsername
+[2024-12-09 13:10:39:144463][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to findByUsername
+[2024-12-09 13:10:39:144463][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to findByUsername
+[2024-12-09 13:10:39:144463][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> end to loadUserByUsername
+[2024-12-09 13:10:39:144464][http-nio-8080-exec-7] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /finance/dividend/3M%20Companys
+[2024-12-09 13:10:39:144464][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@734a2c17-> started to searchFinance
+[2024-12-09 13:10:39:144465][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.FinanceServiceImpl@68feca3a-> started to getDividendByCompanyName
+[2024-12-09 13:10:39:144465][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> started to findByName
+[2024-12-09 13:10:39:144466][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> end to findByName
+[2024-12-09 13:10:39:144466][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> started to handleCustomException
+[2024-12-09 13:10:39:144466][http-nio-8080-exec-7] ERROR f.d.e.CustomExceptionHandler - 존재하지 않는 회사명 입니다.
+[2024-12-09 13:10:39:144466][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> end to handleCustomException
+[2024-12-09 13:10:48:154220][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@564fc235-> started to autocomplete
+[2024-12-09 13:10:48:154221][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> started to autocomplete
+[2024-12-09 13:10:48:154223][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> end to autocomplete
+[2024-12-09 13:10:48:154223][http-nio-8080-exec-9] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@564fc235-> end to autocomplete
+[2024-12-09 13:11:14:179659][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to loadUserByUsername
+[2024-12-09 13:11:14:179659][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to findByUsername
+[2024-12-09 13:11:14:179660][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to findByUsername
+[2024-12-09 13:11:14:179660][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> end to loadUserByUsername
+[2024-12-09 13:11:14:179661][http-nio-8080-exec-10] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company/MMM2
+[2024-12-09 13:11:14:179662][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@564fc235-> started to deleteCompany
+[2024-12-09 13:11:14:179662][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> started to deleteCompany
+[2024-12-09 13:11:14:179662][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> started to findByTicker
+[2024-12-09 13:11:14:179663][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> end to findByTicker
+[2024-12-09 13:11:14:179664][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> started to handleCustomException
+[2024-12-09 13:11:14:179664][http-nio-8080-exec-10] ERROR f.d.e.CustomExceptionHandler - 존재하지 않는 회사명 입니다.
+[2024-12-09 13:11:14:179664][http-nio-8080-exec-10] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> end to handleCustomException
+[2024-12-09 13:11:18:184042][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to loadUserByUsername
+[2024-12-09 13:11:18:184043][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to findByUsername
+[2024-12-09 13:11:18:184044][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to findByUsername
+[2024-12-09 13:11:18:184044][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> end to loadUserByUsername
+[2024-12-09 13:11:18:184044][http-nio-8080-exec-2] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company/MMM
+[2024-12-09 13:11:18:184045][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@564fc235-> started to deleteCompany
+[2024-12-09 13:11:18:184045][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> started to deleteCompany
+[2024-12-09 13:11:18:184045][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> started to findByTicker
+[2024-12-09 13:11:18:184046][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> end to findByTicker
+[2024-12-09 13:11:18:184046][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@49e93381-> started to deleteAllByCompanyId
+[2024-12-09 13:11:18:184055][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@49e93381-> end to deleteAllByCompanyId
+[2024-12-09 13:11:18:184055][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> started to delete
+[2024-12-09 13:11:18:184060][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> end to delete
+[2024-12-09 13:11:18:184060][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> end to deleteCompany
+[2024-12-09 13:11:18:184064][http-nio-8080-exec-2] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@564fc235-> end to deleteCompany
+[2024-12-09 13:11:59:224606][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to loadUserByUsername
+[2024-12-09 13:11:59:224606][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to findByUsername
+[2024-12-09 13:11:59:224607][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to findByUsername
+[2024-12-09 13:11:59:224607][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> end to loadUserByUsername
+[2024-12-09 13:11:59:224608][http-nio-8080-exec-3] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company/MMM
+[2024-12-09 13:11:59:224608][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@564fc235-> started to deleteCompany
+[2024-12-09 13:11:59:224608][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> started to deleteCompany
+[2024-12-09 13:11:59:224608][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> started to findByTicker
+[2024-12-09 13:11:59:224609][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> end to findByTicker
+[2024-12-09 13:11:59:224609][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> started to handleCustomException
+[2024-12-09 13:11:59:224609][http-nio-8080-exec-3] ERROR f.d.e.CustomExceptionHandler - 존재하지 않는 회사명 입니다.
+[2024-12-09 13:11:59:224609][http-nio-8080-exec-3] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> end to handleCustomException
+[2024-12-09 13:12:11:236878][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to loadUserByUsername
+[2024-12-09 13:12:11:236878][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to findByUsername
+[2024-12-09 13:12:11:236880][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to findByUsername
+[2024-12-09 13:12:11:236880][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> end to loadUserByUsername
+[2024-12-09 13:12:11:236880][http-nio-8080-exec-5] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /finance/dividend/3M%20Company
+[2024-12-09 13:12:11:236881][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.FinanceController@734a2c17-> started to searchFinance
+[2024-12-09 13:12:11:236882][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.FinanceServiceImpl@68feca3a-> started to getDividendByCompanyName
+[2024-12-09 13:12:11:236882][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> started to findByName
+[2024-12-09 13:12:11:236882][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> end to findByName
+[2024-12-09 13:12:11:236883][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> started to handleCustomException
+[2024-12-09 13:12:11:236883][http-nio-8080-exec-5] ERROR f.d.e.CustomExceptionHandler - 존재하지 않는 회사명 입니다.
+[2024-12-09 13:12:11:236883][http-nio-8080-exec-5] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.exception.CustomExceptionHandler@78b44fcb-> end to handleCustomException
+[2024-12-09 13:12:18:243492][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> started to loadUserByUsername
+[2024-12-09 13:12:18:243493][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> started to findByUsername
+[2024-12-09 13:12:18:243494][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@421eefd-> end to findByUsername
+[2024-12-09 13:12:18:243494][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.MemberServiceImpl@2d02a066-> end to loadUserByUsername
+[2024-12-09 13:12:18:243494][http-nio-8080-exec-7] INFO  f.d.s.JwtAuthenticationFilter - [kkm] -> /company
+[2024-12-09 13:12:18:243495][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@564fc235-> started to searchCompany
+[2024-12-09 13:12:18:243495][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> started to getAllCompany
+[2024-12-09 13:12:18:243495][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> started to findAll
+[2024-12-09 13:12:18:243495][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - org.springframework.data.jpa.repository.support.SimpleJpaRepository@6caa0248-> end to findAll
+[2024-12-09 13:12:18:243495][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.service.Impl.CompanyServiceImpl@44df834c-> end to getAllCompany
+[2024-12-09 13:12:18:243495][http-nio-8080-exec-7] INFO  focandlol.dividends.aop.LogAspect - focandlol.dividends.web.CompanyController@564fc235-> end to searchCompany
