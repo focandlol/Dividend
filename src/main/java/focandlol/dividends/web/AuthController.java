@@ -29,7 +29,6 @@ public class AuthController {
     public ResponseEntity<?> signIn(@RequestBody Auth.SignIn request){
         MemberEntity member = memberService.authenticate(request);
         String token = tokenProvider.generateToken(member.getUsername(), member.getRoles());
-        log.info("user login -> " + request.getUsername());
         return ResponseEntity.ok(token);
     }
 }
